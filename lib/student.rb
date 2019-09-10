@@ -5,6 +5,7 @@ attr_reader :id
 def initialize(name, grade)
   @name = name 
   @grade = grade
+  @id = id
 end
 
 def self.create_table
