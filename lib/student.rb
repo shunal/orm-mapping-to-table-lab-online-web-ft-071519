@@ -29,7 +29,7 @@ def self.create_table
     sql = <<-SQL
       INSERT INTO student(name, grade) VALUES (?,?);
     SQL
-    DB[:connect].execute(sql, self.name, self.grade)
+    DB[:conn].execute(sql, self.name, self.grade)
   end 
 
 
